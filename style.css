@@ -96,21 +96,22 @@ body {
   justify-content: center;
   font-family: 'Karla', sans-serif;
   background-color: var(--Light-Gray);
+  min-height: 100vh;
 }
 
-h1 {
+.title{
   color: var(--Cyan);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.sub-title{
+  color: var(--Bright-Yellow);
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-h2 {
-  color: var(--Bright-Yellow);
-  font-size: .9rem;
-  margin-bottom: 10px;
-}
-
-h3 {
+.small-heading{
   color: var(--Light-Gray);
   font-size: 1rem;
   font-weight: var(--bold-font);
@@ -123,25 +124,21 @@ h3 {
 }
 
 .price {
-  font-size: 1.5rem;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  flex-basis: 100px;
   color: var(--Light-Gray);
 }
 
 .price-amount {
-  font-size: 2rem;
-  vertical-align: middle;
+  font-size: 2em;
+  align-self: center;
+  margin: 0 10px 0 0;
   font-weight: var(--bold-font);
 }
 
 .per-month {
-  font-size: 1rem;
-  vertical-align: middle;
-  display: inline-block;
-  margin-left: 5px;
-  font-weight: var(--regular-font);
-  color: var(--Light-Gray);
+  align-self: center;
+  opacity: 0.5;
 }
 
 .daily-price {
@@ -162,12 +159,12 @@ h3 {
 
 .first-row {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
 }
 
 .second-row-left {
   background-color: var(--Cyan);
-  padding: 20px;
+  padding: 30px;
   display: grid;
 }
 
@@ -184,16 +181,16 @@ h3 {
 .second-row-right {
   background-color: var(--Cyan);
   opacity: 0.8;
-  padding: 20px;
+  padding: 30px;
 }
 
-.list {
+[role="list"]{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.list-items {
+[role="list-items"]  {
   color: var(--Light-Gray);
   font-size: .875rem;
 }
@@ -204,7 +201,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 35rem;
-    padding: 25px;
   }
 
   .first-row {
