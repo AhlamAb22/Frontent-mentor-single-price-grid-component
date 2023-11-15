@@ -200,7 +200,7 @@ body {
   .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-width: 35rem;
+    max-width: 35rem;
   }
 
   .first-row {
