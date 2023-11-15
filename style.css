@@ -190,7 +190,7 @@ body {
   padding: 0;
 }
 
-[role="list-items"]  {
+[role="listitem"]  {
   color: var(--Light-Gray);
   font-size: .875rem;
 }
